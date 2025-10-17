@@ -85,7 +85,7 @@ bun run frontend:dev
 Electron
 
 ```bash
-bun run eletron
+bun run electron
 ```
 
 ### 6. Build for production
