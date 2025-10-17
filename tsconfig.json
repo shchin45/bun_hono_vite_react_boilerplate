@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "lib": ["ESNext", "DOM"],
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleDetection": "force",
+
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./server/*"]
+    },
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "skipLibCheck": true,
+    "composite": true,
+    "declaration": true,
+    "outDir": "./dist/server",
+
+    // Add this line to fix the lodash import issue:
+    "allowSyntheticDefaultImports": true,
+
+    // You might also want to add this for better compatibility:
+    "esModuleInterop": true
+  },
+  "exclude": [
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "**/*.spec.ts",
+    "**/*.spec.tsx",
+    "**/tests/**",
+    "**/test/**",
+    "**/__tests__/**"
+  ],
+  "include": ["./server/**/*", "schemas"]
+}
