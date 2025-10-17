@@ -93,19 +93,19 @@ bun run eletron
 Backend
 
 ```bash
-bun run dev
+bun run prd
 ```
 
 Frontend
 
 ```bash
-bun run frontend:dev
+bun run build:frontend:prod
 ```
 
 Electron
 
 ```bash
-bun run eletron
+bun run pack:win
 ```
 
 ---
