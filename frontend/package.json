@@ -46,11 +46,24 @@
       "output": "release"
     },
     "win": {
-      "target": "portable"
+      "target": {
+        "target": "portable",
+        "arch": [
+          "x64"
+        ]
+      }
     },
+    "portable": {
+      "artifactName": "${productName}-${version}-portable.exe"
+    },
+    "electronVersion": "37.7.0",
+    "buildDependenciesFromSource": false,
+    "nodeGypRebuild": false,
+    "npmRebuild": false,
     "files": [
       "dist/**/*",
       "electron.js"
-    ]
+    ],
+    "compression": "store"
   }
 }
